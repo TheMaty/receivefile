@@ -1,0 +1,66 @@
+{
+  "name": "receivefile",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.54",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.4.0",
+    "@testing-library/user-event": "7.2.1",
+    "@types/jest": "24.9.1",
+    "@types/node": "13.9.5",
+    "@types/react": "16.9.26",
+    "@types/react-dom": "16.9.5",
+    "concurrently": "5.1.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "2.0.2",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-server": "cross-env NODE_ENV=development nodemon server/server.js --watch server/*",
+    "start-front": "react-scripts start",
+    "build-front": "react-scripts build"
+  },
+  "proxy": "http://40.121.176.20:8000",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
